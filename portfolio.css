@@ -1,0 +1,97 @@
+/* Portfolio Section Styles */
+.portfolio-section {
+  background: #fff;
+}
+.portfolio-item {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+.portfolio-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(79,70,229,0.10);
+  z-index: 2;
+}
+.portfolio-item img {
+  border-radius: 18px 18px 0 0;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  transition: filter 0.3s;
+}
+.portfolio-item:hover img {
+  filter: brightness(0.92) saturate(1.2);
+}
+.portfolio-item .card-body {
+  padding: 1.25rem 1rem 1.5rem 1rem;
+}
+.portfolio-item h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.portfolio-item p {
+  font-size: 0.98rem;
+  color: #555;
+}
+.portfolio-item .badge {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  padding: 0.4em 0.9em;
+  border-radius: 12px;
+}
+
+.portfolio-header {
+    background: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    position: relative;
+    padding: 5.4rem 0;
+  }
+
+.portfolio-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio-header h1 {
+    font-weight: 800; /* Make font bolder */
+    font-size: 4.5rem; /* Increase font size */
+    background: -webkit-linear-gradient(45deg, #FF9D3D, #A1E3F9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+.cta-section {
+    background-color: #f8f9fa;
+    color: #343a40;
+    border-top: 1px solid #e9ecef;
+}
+
+.cta-section .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn-primary:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 991px) {
+    .portfolio-item img {
+        height: 160px;
+    }
+}

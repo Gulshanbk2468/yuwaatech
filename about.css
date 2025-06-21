@@ -1,0 +1,106 @@
+.about-header {
+    background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    position: relative;
+    padding: 6rem 0;
+  }
+  
+  .about-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .about-header h1 {
+      font-weight: 800;
+      font-size: 4.5rem;
+      background: -webkit-linear-gradient(45deg, #A1E3F9, #FF9D3D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .our-story-section {
+    background-color: #ffffff;
+  }
+
+  .our-vision-section {
+    background-color: #f8f9fa;
+  }
+
+  .vision-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .vision-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+
+  .vision-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+  }
+
+  .team-section {
+    padding: 80px 0;
+  }
+  
+  .team-member .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-top: -50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member:hover .card-img-top {
+    transform: scale(1.1);
+  }
+
+  .team-member .card-body {
+      padding-top: 20px;
+  }
+
+  .team-member .card-title {
+      font-weight: 700;
+  }
+
+  .team-social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .team-social-icons a {
+    font-size: 1.3rem;
+    color: #495057;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .team-social-icons a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+
+  .team-member {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
